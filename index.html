@@ -30,6 +30,77 @@
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
+            <div class="form__contents name__box">
+              <div class="name is-halfWidth">
+                <p class="item-text">名字<span class="mandatory">※</span></p>
+                <input type="text" name="last__name" class="entry__box">
+              </div>
+              <div class="name is-halfWidth">
+                <p class="item-text">名前<span class="mandatory">※</span></p>
+                <input type="text" name="first__name" class="entry__box">
+              </div>
+            </div>
+            <div class="form__contents gender__box">
+              <label class="gender__select">
+                <input type="radio" name="male" class="select__box">
+                <span>男性</span>
+              </label>
+              <label class="gender__select">
+                <input type="radio" name="female" class="select__box">
+                <span>女性</span>
+              </label>
+              <label class="gender__select">
+                <input type="radio" name="other" class="select__box">
+                <span>その他</span>
+              </label>
+            </div>
+            <div class="form__contents birthplace is-halfWidth">
+              <p class="item-text">出身</p>
+              <select name="birthplace" class="entry__box">
+                <option value="東京">東京</option>
+                <option value="千葉">千葉</option>
+                <option value="埼玉">埼玉</option>
+                <option value="神奈川">神奈川</option>
+              </select>
+            </div>
+            <div class="form__contents e-mail">
+              <p class="item-text">Eメール<span class="mandatory">※</span></p>
+              <input type="email" name="mail" placeholder="ex)hoge@example.com" class="entry__box is-fullWidth">
+            </div>
+            <div class="form__contents tel">
+              <p class="item-text">電話番号</p>
+              <input type="tel" name="tel" placeholder="ex)09012345678" class="entry__box is-fullWidth">
+            </div>
+            <div class="form__contents password">
+              <p class="item-text">パスワード<span class="mandatory">※</span></p>
+              <input type="password" name="password" class="entry__box is-fullWidth">
+            </div>
+            <div class="form__contents password">
+              <p class="item-text">パスワード(確認用)<span class="mandatory">※</span></p>
+              <input type="password" name="password" class="entry__box is-fullWidth">
+            </div>
+            <div class="form__contents course">
+              <p class="item-text">希望コース</p>
+              <label class="course__select">
+                <input type="checkbox" name="frontend" class="select__box">
+                <span>フロントエンド</span>
+              </label>
+              <label class="course__select">
+                <input type="checkbox" name="backend" class="select__box">
+                <span>バックエンド</span>
+              </label>
+              <label class="course__select">
+                <input type="checkbox" name="app" class="select__box">
+                <span>アプリ</span>
+              </label>
+            </div>
+            <div class="form__contents remarks">
+              <p class="item-text">備考</p>
+              <textarea name="remarks" placeholder="何かあればご記入ください" class="entry__box is-fullWidth"></textarea>
+            </div>
+            <div class="form__contents">
+              <input type="submit" value="アカウント作成" class="button-init is-fullWidth">
+            </div>
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
